@@ -1,0 +1,323 @@
+/* mayursection */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mayurcontainer {
+  width: 80%;
+  margin: auto;
+}
+.mayurgrid {
+  height: 80vh;
+  width: 100%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  column-gap: 40px;
+  row-gap: 20px;
+}
+
+.mayurboxnews {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: auto;
+}
+
+.mayurboximg > img {
+  width: 100%;
+  height: auto;
+}
+.mayurboximg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mayurbox > span {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* sectionfooter */
+footer {
+  background-color: black;
+}
+
+.mayurfootercontainer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgb(71, 71, 71);
+
+  padding: 10px 10px;
+}
+.mayurfootercontainer .mayurfooterbox {
+  border: 1px solid black;
+}
+.mayurfooterboximg {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mayurfooterboximg > img {
+  width: 100%;
+  height: auto;
+}
+.mayurfooterboxtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mayurfooterboxtext > .text1 {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+.mayurfooterboxtext > .text2 {
+  font-size: 16px;
+  color: rgb(197, 197, 6);
+  font-weight: 600;
+}
+.mayurfooterboxbutton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mayurfooterboxbutton > span {
+  color: white;
+  font-size: 16px;
+
+  border: 1px solid black;
+}
+.buttondesign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
+.buttondesign > .button1 {
+  width: 100%;
+
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: center;
+  background-color: #ed0331;
+  color: white;
+}
+.buttondesign > .button2 {
+  width: 100%;
+
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.buttondesign > .button2:hover {
+  background-color: pink;
+  color: #ed0331;
+}
+/* sectionfooter2 */
+
+.mayurfootericons {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid rgb(71, 71, 71);
+
+  padding: 20px 20px;
+}
+.mayurmasaiicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mayursocialicon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+/* sectionfooter3 */
+
+.mayurfootercourses {
+  width: 80%;
+
+  margin: auto;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 30px;
+
+  gap: 10px;
+}
+
+.mayurfootercourses > span {
+  border-radius: 20px;
+  padding: 8px 10px;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-align: center;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+}
+
+/* sectionfooter4 */
+
+.mayuraboutsection {
+  width: 80%;
+
+  margin: auto;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(67, 66, 66);
+}
+
+.mayuraboutsection1 {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.mayuraboutsection1 ul > li {
+  color: white;
+  list-style-type: none;
+  line-height: 40px;
+}
+.mayuraboutsection1 ul > li:hover {
+  color: #ed0331;
+}
+
+.mayuraboutsection2 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+.mayuraboutsection2 > span {
+  color: white;
+  line-height: 25px;
+  font-size: 14px;
+}
+.mayurtelegrambutton {
+  border: 1px solid wheat;
+  padding: 8px 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  color: rgb(9, 133, 234);
+}
+.mayurtelegrambutton:hover {
+  background-color: rgb(213, 212, 212);
+}
+.mayurlastfooterline {
+  width: 80%;
+  margin: auto;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.mayurlastfooterline > span {
+  color: grey;
+  padding: 16px 18px;
+}
+/* mayursectionend */
+/* SaiTejasection */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+header img {
+  height: 50px;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px; 
+}
+
+nav a {
+  margin: 0 18px; 
+  text-decoration: none;
+  color: #333;
+  font-size: 18px; 
+}
+
+nav a:hover {
+  color:#ff0000;
+}
+
+nav a.scholarship {
+  color: red;  
+}
+
+button.sign-up {
+  background-color: white;
+  color:red;
+  border: 1px solid;
+  padding: 20px 30px;
+  border-radius: 20px; 
+  cursor: pointer;
+  transition: background-color 0.2s; 
+}
+
+button.sign-up:hover {
+  background-color: #e4beb8; 
+}
+.user-profile {
+display: flex;
+align-items: center;
+}
+/* SaiTejasection */
