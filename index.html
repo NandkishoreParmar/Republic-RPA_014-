@@ -1,11 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Nandkishore </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai.com</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      #courses > div.fixed {
+        max-width: 1320px;
+        margin: auto;
+        /* border: 2px solid; */
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-left: 100px;
+        /* justify-content: space-around; */
+      }
+      #courses > div.fixed > div.items {
+        /* border: 2px solid; */
+        width: 350px;
+        /* padding: 20px; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      #courses > div.fixed > div.items > div > img {
+        max-width: 30%;
+        /* text-align: center; */
+      }
+      #courses > div.fixed > div.items > div:nth-of-type(1) {
+        text-align: center;
+        background-color: #b7b8e6;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        padding: 50px;
+        /* border-ra: 10px; */
+      }
+      #courses > div.fixed > div.items > div:nth-of-type(2) {
+        padding: 20px;
+      }
+      #courses > div.fixed > div.items > div:nth-of-type(2) > p {
+        border: 1px solid grey;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #f7f7ff;
+      }
+      #courses > div.fixed > div.items > div:nth-of-type(2) > div {
+        /* border: 2px solid; */
+      }
+      #courses > div.fixed > div.items > div:nth-of-type(2) > div>ul{
+        padding: 20px;
+      }
+      #courses > div.fixed > div.items > div:nth-of-type(2) > div>ul>li{
+        list-style-type: none;
+      }
+      #courses > div.fixed > div.items > div:nth-of-type(2) > div>div {
+        /* border: 2px solid; */
+        /* padding: 10px; */
+        text-align: center;
+        /* border-radius: 10px; */
+    
+      }
+      #courses > div.fixed > div.items > div:nth-of-type(2) > div>div button{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #ec0332;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Nandkishore Parmar </h1> -->
+
+    <section id="courses">
+      <div class="fixed">
+        <div class="items">
+          <div>
+            <img
+              src="https://masai-website-images.s3.ap-south-1.amazonaws.com/full_stack1_329d6b5595.png"
+              alt="card"
+            />
+          </div>
+
+          <div>
+            <h3>Full Stack Web Development</h3>
+            <p>For 12th, Diploma & College Graduates, 18-28 years</p>
+            <hr />
+            <div>
+              <ul>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>Become job-ready in 30 weeks</li>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>
+                  Opportunities: Full Stack Developer, Software Engineer & much
+                  more.
+                </li>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>100% live learning with expert instructors.</li>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>Pay After Placement</li>
+              </ul>
+              <div>
+                <button>VIEW DETAILS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div>
+            <img
+              src="https://masai-website-images.s3.ap-south-1.amazonaws.com/full_stack1_329d6b5595.png"
+              alt="card"
+            />
+          </div>
+
+          <div>
+            <h3>Full Stack Web Development</h3>
+            <p>For 12th, Diploma & College Graduates, 18-28 years</p>
+            <hr />
+            <div>
+              <ul>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>Become job-ready in 30 weeks</li>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>
+                  Opportunities: Full Stack Developer, Software Engineer & much
+                  more.
+                </li>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>100% live learning with expert instructors.</li>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>Pay After Placement</li>
+              </ul>
+              <div>
+                <button>VIEW DETAILS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div>
+            <img
+              src="https://masai-website-images.s3.ap-south-1.amazonaws.com/full_stack1_329d6b5595.png"
+              alt="card"
+            />
+          </div>
+
+          <div>
+            <h3>Full Stack Web Development</h3>
+            <p>For 12th, Diploma & College Graduates, 18-28 years</p>
+            <hr />
+            <div>
+              <ul>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>Become job-ready in 30 weeks</li>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>
+                  Opportunities: Full Stack Developer, Software Engineer & much
+                  more.
+                </li>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>100% live learning with expert instructors.</li>
+                <li><span><i class="fa-solid fa-check" style="color: #63E6BE;"></i></span>Pay After Placement</li>
+              </ul>
+              <div>
+                <button>VIEW DETAILS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nandkishore Parmar -->
+
+  </body>
+  <script src="https://kit.fontawesome.com/63f68e8d12.js" crossorigin="anonymous"></script>
 </html>
