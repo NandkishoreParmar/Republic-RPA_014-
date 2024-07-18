@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="images/">
+
     <link rel="stylesheet" href="style.css" />
     <title>Masai School</title>
+
     <style>
 /*    Nandkishore Parmar Day 2    */
         #courses{
@@ -15,11 +18,194 @@
       #courses > div.Nheading {
         max-width: 1320px;
         margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div.bout{
+        width: 1300px;
+      }
+      #bheading,#bheading1,#bheading2,#bheading3 {
+
         /* border: 2px solid; */
+
         text-align: center;
         padding: 50px;
         /* z-index: 0; */
       }
+      .bcontainer1 {
+        display: flex;
+        gap: 30px;
+      }
+      
+      .bcontainer2 {
+        display: flex;
+        gap: 40px;
+        background-color: #f2f6ff;
+        padding: 30px;
+        border-radius: 9px;
+      }
+      .bcontainer2 img {
+        width: 650px;
+        height: auto;
+        border: 3px solid #0485ca;
+        border-radius: 9px;
+      }
+      .bcontainer1 button {
+        padding: 15px 20px;
+        background-color: red;
+        border-radius: 10px;
+        color: white;
+        border: none;
+      }
+      .bcontainer1 button:hover{
+        background-color: rgb(182, 19, 17);
+      }
+      .bcontainer1 button:active{
+        background-color: rgb(2, 108, 32);
+      }
+      div#ba {
+        position: relative;
+      }
+      div#ba>div {
+        position: absolute;
+      }
+      .bout {
+        margin-inline: auto;
+        position: relative;
+        display: flex;
+        height: 100px;
+        margin-top: 1rem;
+        overflow: hidden;
+        mask-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 10%,
+          rgba(0, 0, 0, 1) 90%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+      .in {
+        width: 40px;
+        height: 40px;
+        /* position: absolute; */
+        border-radius: 6px;
+        left: max(calc(30px * 25), 100%);
+        animation-name: ScrollLeft;
+        animation-duration: 100s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-delay: 10s;
+      }
+      @keyframes ScrollLeft {
+        to {
+          left: -40px;
+        }
+      }
+      .in1 {
+        animation-delay: calc(100s /  * (25-1) * -1);
+      }
+      .in2 {
+        animation-delay: calc(100s / 25 * (25-2) * -1);
+      }
+      .in3 {
+        animation-delay: calc(100s / 25 * (25-3) * -1);
+      }
+      .in4 {
+        animation-delay: calc(100s / 25 * (25-4) * -1);
+      }
+      .in5 {
+        animation-delay: calc(100s / 25 * (25-5) * -1);
+      }
+      .in6 {
+        animation-delay: calc(100s / 25 * (25-6) * -1);
+      }
+      .in7 {
+        animation-delay: calc(100s / 25 * (25-7) * -1);
+      }
+      .in8 {
+        animation-delay: calc(100s / 25 * (25-8) * -1);
+      }
+      .in9 {
+        animation-delay: calc(100s / 25 * (25-9) * -1);
+      }
+      .in10 {
+        animation-delay: calc(100s / 25 * (25-10) * -1);
+      }
+      .in11 {
+        animation-delay: calc(100s / 25 * (25-11) * -1);
+      }
+      .in12 {
+        animation-delay: calc(100s / 25 * (25-12) * -1);
+      }
+      .in13 {
+        animation-delay: calc(100s / 25 * (25-13) * -1);
+      }
+      .in14 {
+        animation-delay: calc(100s / 25 * (25-14) * -1);
+      }
+      .in15 {
+        animation-delay: calc(100s / 25 * (25-15) * -1);
+      }
+      .in16 {
+        animation-delay: calc(100s / 25 * (25-16) * -1);
+      }
+      .in17 {
+        animation-delay: calc(100s / 25 * (25-17) * -1);
+      }
+      .in18 {
+        animation-delay: calc(100s / 25 * (25-18) * -1);
+      }
+      .in19 {
+        animation-delay: calc(100s / 25 * (25-19) * -1);
+      }
+      .in20 {
+        animation-delay: calc(100s / 25 * (25-20) * -1);
+      }
+      .in21 {
+        animation-delay: calc(100s / 25 * (25-21) * -1);
+      }
+      .in22 {
+        animation-delay: calc(100s / 25 * (25-22) * -1);
+      }
+      .in23 {
+        animation-delay: calc(100s / 25 * (25-23) * -1);
+      }
+      .in24 {
+        animation-delay: calc(100s / 25 * (25-24) * -1);
+      }
+      .in25 {
+        animation-delay: calc(100s / 25 * (25-25) * -1);
+      }
+      .bcont{
+        display: flex;
+        gap: 10px;
+        max-width: 2200px;
+        mask-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 3%,
+          rgba(0, 0, 0, 1) 97%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+      div.bcointainer {
+        display: flex;
+      }
+      div.bcontainer>div#bb{
+        border: 2px solid #0485ca;
+        border-radius: 10px;
+        margin-left: 500px;
+        padding: 30px;
+        height: 200px;
+      }
+      div.bcontainer>div#bb img{
+        width: 40px;
+        border-radius: 10px;
+      }
+      div.bcontainer>div#bb>div:nth-of-type(1){
+        display: inline-flex;
+        gap: 10px;
+
       #courses > div.Nheading > h1 {
         font-weight: 700;
         font-size: 40px;
@@ -71,6 +257,7 @@
         border: 2px solid #ef1741;
         color: #ef1741;
         background-color: white;
+
       }
       /* div.containerN > div > a:nth-of-type(7) {
         color: #8184d3;
@@ -267,5 +454,148 @@
       </div>
     </section>
 <!-- Nandkishore Day 2      -->
+<!--     BharathCodeStart -->
+    <div id="bheading">
+  <h2>Be A Part Of Our Thriving</h2>
+</div>
+<div id="bheading1">
+  <h2 style="color: red">Tech Community</h2><br>
+</div>
+<div class="bcont">
+  <img width="250px" height="100px" src="https://www.masaischool.com/images/new-homepage/community/community6.webp" alt="">
+  <img width="250px" height="100px" src="https://www.masaischool.com/images/new-homepage/community/community6.webp" alt="">
+  <img width="250px" height="100px" src="https://www.masaischool.com/images/new-homepage/community/community6.webp" alt="">
+  <img width="250px" height="100px" src="https://www.masaischool.com/images/new-homepage/community/community6.webp" alt="">
+  <img width="250px" height="100px" src="https://www.masaischool.com/images/new-homepage/community/community6.webp" alt="">
+  <img width="250px" height="100px" src="https://www.masaischool.com/images/new-homepage/community/community6.webp" alt="">
+</div><br>
+<!-- <div id="bheading2">
+  <h2>Meet Our <span style="color: red">4000+</span> yellow-vectorHiring Partners</h2>
+</div>
+<div class="bout">
+  <div class="in in1"></div>
+      <div class="in in2"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_23a9923a34.svg" alt=""></div>
+      <div class="in in3"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/leapfinance_0d785d05eb.svg" alt=""></div>
+      <div class="in in4"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ola_15b5ee2b82.svg" alt=""></div>
+      <div class="in in5"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ibm_795b5429ee.svg" alt=""></div>
+      <div class="in in6"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/byjus_e7b97a9c80.svg" alt=""></div>
+      <div class="in in7"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ajio_a16cd7a85b.svg" alt=""></div>
+      <div class="in in8"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatagri_d4794042fe.svg" alt=""></div>
+      <div class="in in9"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/globallogic_c30eb641f7.svg" alt=""></div>
+      <div class="in in10"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/eatfit_9dc276a187.svg" alt=""></div>
+      <div class="in in11"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/dream11_d6c8d97a52.svg" alt=""></div>
+      <div class="in in12"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/homelane_e9cadd0c3c.svg" alt=""></div>
+      <div class="in in13"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/moneytap_d5a6c9d532.svg" alt=""></div>
+      <div class="in in14"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/urbanpiper_2884348a0b.svg" alt=""></div>
+      <div class="in in15"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/airmeet_93e45faced.svg" alt=""></div>
+      <div class="in in16"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_a5c1ce2bc6.svg" alt=""></div>
+      <div class="in in17"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/whitehat_5a86f1e308.svg" alt=""></div>
+      <div class="in in18"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatpe_a3a5a3f552.svg" alt=""></div>
+      <div class="in in19"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatpe_a3a5a3f552.svg" alt=""></div>
+      <div class="in in20"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/salesken_baefe048ac.svg" alt=""></div>
+      <div class="in in21"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vyapar_3f3770ebb5.svg" alt=""></div>
+      <div class="in in22"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/capgemini_31a863e94f.svg" alt=""></div>
+      <div class="in in23"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/simplilearn_f8af8de923.svg" alt=""></div>
+      <div class="in in24"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pagarbook_2746958f65.svg" alt=""></div>
+      <div class="in in25"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/bharatagri_d4794042fe.svg" alt=""></div>
+    </div> -->
+    <div id="bheading3">
+      <h2>Our Students Are <span style="color: red">Creating Impact</span></h2>
+    </div>
+    <br /><br /><br />
+    <div class="bcontainer">
+      <div id="ba">
+        <div>
+          <video
+            width="350px"
+            controls
+            src="./images/masai_being_a_solution_to_tech_hiring_masai_partners_speak_1080p_21acb9bcbb.mp4"
+          ></video>
+        </div>
+        <div>
+          <video
+            width="350px"
+            controls
+            src="./images/masai_is_building_a_great_solution_ankush_sachdeva_ceo_sharechat_1080p_679f7eaffd.mp4"
+          ></video>
+        </div>
+        <div>
+          <video
+            width="350px"
+            controls
+            src="./images/masai_partners_speak_nobrokerofficial_highly_recommends_hiring_masai_graduates_1080p_97dd09e7d4.mp4"
+          ></video>
+        </div>
+      </div>
+      <div id="bb">
+        <p> <h2>""</h2>Masai does a great job of attracting ambitious folk and it shows in the hunger with which the grads...</p>
+        <div>
+          <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Arya_Adarsha_Gautam_a72b51d7b3.jpeg" alt="">
+          </div>
+          <div>
+            <h3>Arya Adarsha Gautam</h3>
+            <p>CTO and Co-Founder - Pagarbook</p>
+          </div>
+        </div>
+        <div>
+          <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/pagarbook_rect_adcdc345e4.svg" alt="">
+        </div>  
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="bcontainer1">
+      <div>
+        <h2>
+          <span style="color: red">Elevate</span> yellow-vectorYour Career
+          Possibilities
+        </h2>
+        <br />
+        <p style="font-size: 23px; font-weight: 450">
+          It doesn’t matter where you come from, we know
+        </p>
+        <p style="font-size: 23px; font-weight: 450">
+          how to get you to your dream tech career.
+        </p>
+        <br />
+        <p>
+          Our graduates consistently outperform students from top Indian
+          engineering colleges & universities. 70% of companies who have hired 1
+          Masai graduate come back to us with their hiring mandates.
+        </p>
+        <br />
+        <div><button>APPLY NOW</button></div>
+      </div>
+      <div>
+        <video
+          width="600px"
+          controls
+          src="./images/no_matter_your_background_get_your_dream_career_skilled_by_masai_1080p_bb27094ea6.mp4"
+        ></video>
+      </div>
+    </div>
+    <br />
+    <div class="bcontainer2">
+      <div>
+        <img
+          src="https://www.masaischool.com/images/new-homepage/nsdc/nsdc-cert.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <h2><span style="color: red;">Certification </span>By The N.S.D.C</h2>
+        <p>
+          NSDC Certification is a prestigious recognition for students who have
+          completed accredited skill-based training programs. It validates their
+          expertise, demonstrating their dedication to practical skills. This
+          certification provides a competitive edge in the job market,
+          showcasing proficiency and adherence to industry standards. NSDC
+          certifications are widely accepted, unlocking rewarding career
+          opportunities and personal growth.
+        </p>
+      </div>
+    </div>
+<!-- BharathCodeEnd -->
+
   </body>
 </html>
