@@ -1,260 +1,278 @@
-/* mayursection */
-
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 body {
   font-family: "Open Sans", sans-serif;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-.mayurcontainer {
-  width: 80%;
+
+/* sectioncards */
+
+.mcontainer {
+  max-width: 1320px;
   margin: auto;
 }
-.mayurgrid {
-  height: 80vh;
+
+.mmasaigrid {
   width: 100%;
+
   margin: auto;
 
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-content: center;
-  column-gap: 40px;
-  row-gap: 20px;
 }
 
-.mayurboxnews {
-  grid-column-start: 1;
-  grid-column-end: 4;
+.mmasaibox1 {
+  width: 400px;
   margin: auto;
-}
 
-.mayurboximg > img {
-  width: 100%;
-  height: auto;
-}
-.mayurboximg {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.mayurbox > span {
-  font-size: 20px;
+
+.mmasaibox1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.mmasaibox1 {
+  font-size: 35px;
   font-weight: 900;
 }
 
+.mmasaibox {
+  height: 150px;
+  width: 400px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.mmasaibox > span {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.mmasaiboximg {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mmasaiboximg > img {
+  width: 400px;
+}
+
 /* sectionfooter */
-footer {
+
+#footersection {
   background-color: black;
 }
-
-.mayurfootercontainer {
+footer {
   width: 100%;
+  margin: auto;
+  background-color: black;
+}
+.mbrochure {
+  width: 35%;
+  padding: 10px;
   margin: auto;
   display: flex;
   justify-content: center;
+
   align-items: center;
-  gap: 10px;
-  border-bottom: 1px solid rgb(71, 71, 71);
-
-  padding: 10px 10px;
 }
-.mayurfootercontainer .mayurfooterbox {
-  border: 1px solid black;
+.mbrochure > img {
+  width: 80px;
 }
-.mayurfooterboximg {
-  width: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.mayurfooterboximg > img {
-  width: 100%;
-  height: auto;
-}
-.mayurfooterboxtext {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.mayurfooterboxtext > .text1 {
-  font-size: 20px;
-  color: white;
-  font-weight: 600;
-}
-.mayurfooterboxtext > .text2 {
-  font-size: 16px;
-  color: rgb(197, 197, 6);
-  font-weight: 600;
-}
-.mayurfooterboxbutton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.mayurfooterboxbutton > span {
-  color: white;
-  font-size: 16px;
-
-  border: 1px solid black;
-}
-.buttondesign {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  gap: 10px;
-}
-.buttondesign > .button1 {
-  width: 100%;
-
-  border-radius: 10px;
-  padding: 10px 12px;
-  text-align: center;
-  background-color: #ed0331;
-  color: white;
-}
-.buttondesign > .button2 {
-  width: 100%;
-
-  border-radius: 10px;
-  padding: 10px 12px;
-  text-align: center;
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-}
-.buttondesign > .button2:hover {
-  background-color: pink;
-  color: #ed0331;
-}
-/* sectionfooter2 */
-
-.mayurfootericons {
-  width: 80%;
+.mmasaistarted {
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  border-bottom: 1px solid rgb(71, 71, 71);
-
-  padding: 20px 20px;
-}
-.mayurmasaiicon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mayursocialicon {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 30px;
-}
-
-/* sectionfooter3 */
-
-.mayurfootercourses {
-  width: 80%;
-
-  margin: auto;
-  display: flex;
-
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 30px;
-
-  gap: 10px;
 }
-
-.mayurfootercourses > span {
-  border-radius: 20px;
-  padding: 8px 10px;
-  font-size: 16px;
-  font-weight: 600;
-
-  text-align: center;
-  background-color: white;
-  border: 1px solid white;
-  color: black;
-}
-
-/* sectionfooter4 */
-
-.mayuraboutsection {
-  width: 80%;
-
+.mtectjob {
   margin: auto;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.mtectjobbutton1 {
+  width: 100%;
+  color: white;
 
+  text-align: center;
+  background-color: #ed0331;
+  padding: 5px 6px;
+  border-radius: 5px;
+}
+.mtectjobbutton2 {
+  width: 100%;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  padding: 6px 7px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.mtectjobbutton2:hover {
+  background-color: pink;
+}
+.mmasaiicons {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid rgb(67, 66, 66);
+  padding: 20px;
+  border-bottom: 1px solid rgb(68, 68, 68);
 }
-
-.mayuraboutsection1 {
+.mmasaisocialicons {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.mmasaicoursesinfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
+  gap: 10px;
+  padding: 30px;
+}
+.mmasaicoursesinfo > span {
+  padding: 8px 10px;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.mmasaiaboutus {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+.masaiaboutus1 {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+  padding: 10px;
 }
-.mayuraboutsection1 ul > li {
-  color: white;
-  list-style-type: none;
+.masaiaboutus1 ul > li {
+  color: #a7a8aa;
   line-height: 40px;
+  list-style-type: none;
+  font-size: 14px;
 }
-.mayuraboutsection1 ul > li:hover {
+.masaiaboutus1 ul > li:hover {
   color: #ed0331;
 }
 
-.mayuraboutsection2 {
+.masaiaboutus2 {
   display: flex;
   flex-direction: column;
-
-  justify-content: flex-start;
-  align-items: center;
-}
-.mayuraboutsection2 > span {
-  color: white;
-  line-height: 25px;
-  font-size: 14px;
-}
-.mayurtelegrambutton {
-  border: 1px solid wheat;
-  padding: 8px 16px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: white;
-  color: rgb(9, 133, 234);
-}
-.mayurtelegrambutton:hover {
-  background-color: rgb(213, 212, 212);
-}
-.mayurlastfooterline {
-  width: 80%;
-  margin: auto;
-  display: flex;
-
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+  padding: 10px;
 }
-.mayurlastfooterline > span {
-  color: grey;
-  padding: 16px 18px;
+.mlastfooterline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #a7a8aa;
+  padding: 20px;
 }
-/* mayursectionend */
+.mtelegrambutton {
+  background-color: whitesmoke;
+  color: blue;
+  padding: 10px 12px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.mtelegrambutton:hover {
+  background-color: rgb(182, 179, 179);
+}
+
+/* companiesanimationsection */
+
+.mcompaniescontainer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px;
+  
+}
+.mcompaniesheading {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.mcompaniesheading > span {
+  margin: auto;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+.mcompaniesanimation {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  animation: scroll 30s linear infinite;
+}
+.mcompaniesanimation:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+.mcompaniesanimation > img {
+  width: 115px;
+
+  border-radius: 20px;
+  box-shadow: rgba(144, 117, 255, 0.35) 0px 5px 15px;
+}
+
+
+
+
