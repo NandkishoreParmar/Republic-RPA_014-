@@ -127,6 +127,8 @@ nav>div.containerN>a>sup>sup{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .dropdown {
@@ -441,7 +443,7 @@ color: #8184d3;
         }
       }
       .in1 {
-        animation-delay: calc(100s /  * (25-1) * -1);
+        animation-delay: calc(100s / 25 * (25-1) * -1);
       }
       .in2 {
         animation-delay: calc(100s / 25 * (25-2) * -1);
@@ -546,9 +548,7 @@ color: #8184d3;
         gap: 10px;
       }
 
-      .bharath1{
-        /* background-color: #eeeeea; */
-    }
+    
     .bwrapper{
         height: auto;
         display: flex;
@@ -734,97 +734,212 @@ color: #8184d3;
 
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
-body {
+html {
+  height: 100%;
+}
+.mbody {
   font-family: "Open Sans", sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+}
+
+/* communitycorousal */
+
+.mcarouselcontainer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.mcarouselheading {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.mcarouselheading > span {
+  margin: auto;
+  font-size: 35px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+
+.main-carousel {
+  width: 100%;
+  margin: auto;
+}
+.cell {
+  width: 33%;
+  height: 300px;
+  margin: 0 15px;
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+.main-carousel img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.main-carousel img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.mcarouselbutton {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mcarouselbutton > span {
+  margin: auto;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background-color: #ed0331;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+/* companiesanimationsection */
+
+.mcompaniescontainer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px;
+  overflow: hidden;
+}
+.mcompaniesheading {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.mcompaniesheading > span {
+  margin: auto;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+.mcompaniesanimation {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  animation: scroll 20s linear infinite;
+}
+.mcompaniesanimation:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+.mcompaniesanimation > img {
+  width: 115px;
+
+  border-radius: 20px;
+  box-shadow: rgba(144, 117, 255, 0.35) 0px 5px 15px;
+  transition: 0.3s;
+}
+.mcompaniesanimation > img:hover {
+  transform: translateY(-10px);
 }
 
 /* sectioncards */
-
 .mcontainer {
-  max-width: 1320px;
+  width: 1320px;
   margin: auto;
 }
-
-.mmasaigrid {
-  width: 100%;
-
-  margin: auto;
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  align-content: center;
-}
-
-.mmasaibox1 {
-  width: 400px;
-  margin: auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.mmasaibox1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-.mmasaibox1 {
+.masaiboxheading {
+  color: black;
   font-size: 35px;
+  text-align: center;
   font-weight: 900;
+  padding: 10px;
 }
 
-.mmasaibox {
-  height: 150px;
-  width: 400px;
+.masaiboxcontainer {
+  width: 100%;
   margin: auto;
-
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.mmasaibox > span {
-  font-weight: 900;
-  font-size: 20px;
-}
-
-.mmasaiboximg {
-  width: 400px;
-  height: 400px;
-  margin: auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
   justify-content: center;
 }
 
-.mmasaiboximg > img {
+.masaiboxcard {
   width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.masaiboxcard:hover {
+  transform: translateY(-10px);
+}
+
+.masaiboxcard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.masaiboxcard-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.masaiboxcard-content span {
+  display: block;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.masaiboxcard-content span.highlight {
+  color: #ed0331;
+  text-decoration: underline;
 }
 
 /* sectionfooter */
 
-#footersection {
-  background-color: black;
-}
 footer {
-  width: 100%;
-  margin: auto;
   background-color: black;
+  margin-top: auto;
 }
 .mbrochure {
   width: 35%;
@@ -889,6 +1004,8 @@ footer {
   gap: 20px;
 }
 .mmasaicoursesinfo {
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -945,6 +1062,7 @@ footer {
   color: #a7a8aa;
   padding: 20px;
 }
+
 .mtelegrambutton {
   background-color: whitesmoke;
   color: blue;
@@ -959,51 +1077,148 @@ footer {
   background-color: rgb(182, 179, 179);
 }
 
-/* companiesanimationsection */
-
-.mcompaniescontainer {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding: 80px;
-  
-}
-.mcompaniesheading {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-}
-.mcompaniesheading > span {
-  margin: auto;
-  font-size: 35px;
-  color: rgb(0, 0, 0);
-  font-weight: 900;
-}
-.mcompaniesanimation {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  animation: scroll 30s linear infinite;
-}
-.mcompaniesanimation:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+@media (max-width: 1280px) {
+  .mcontainer {
+    max-width: 100%;
   }
-  100% {
-    transform: translateX(-200%);
+  .mbrochure {
+    width: 45%;
   }
 }
-.mcompaniesanimation > img {
-  width: 115px;
-
-  border-radius: 20px;
-  box-shadow: rgba(144, 117, 255, 0.35) 0px 5px 15px;
+@media (max-width: 1024px) {
+  .mcontainer {
+    max-width: 100%;
+  }
+  .mbrochure {
+    width: 50%;
+  }
+  .cell {
+    height: 250px;
+  }
+  .main-carousel img {
+    height: 250px;
+  }
+  .mtectjobbutton1 {
+    font-size: 14px;
+  }
+  .mcarouselheading > span {
+    font-size: 25px;
+  }
+  .mmasaicoursesinfo > span {
+    font-size: 12px;
+  }
+  .mmasaicoursesinfo {
+    justify-content: center;
+  }
+  .masaiaboutus2 {
+    font-size: 10px;
+  }
 }
+
+@media (max-width: 768px) {
+  .mcontainer {
+    max-width: 100%;
+  }
+  .mbrochure {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mbrochure > img {
+    width: 0px;
+  }
+  .mmasaicoursesinfo {
+    flex-direction: column;
+  }
+
+  .mlastfooterline {
+    padding: 12px;
+  }
+  .mmasaiaboutus {
+    flex-direction: column;
+  }
+  .mcompaniesheading > span {
+    font-size: 25px;
+  }
+  .cell {
+    width: 100%;
+    height: 350px;
+    margin: 0 10px;
+  }
+
+  .main-carousel img {
+    height: 350px;
+    
+  }
+  .masaiboxheading {
+    font-size: 25px;
+  }
+  .mcompaniesanimation {
+    gap: 20px;
+  }
+  .mcompaniesanimation > img {
+    width: 100px;
+  }
+  .masaiaboutus1 ul > li {
+    line-height: 20px;
+
+    font-size: 12px;
+  }
+  .masaiaboutus1 {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .mcontainer {
+    max-width: 100%;
+  }
+  .cell {
+    height: 150px;
+  }
+  .main-carousel img {
+    height: 150px;
+  }
+  .mmasaiicons {
+    flex-direction: column;
+  }
+  .cell {
+    width: 100%;
+    height: 250px;
+    margin: 0 10px;
+  }
+
+  .main-carousel img {
+    height: 250px;
+    
+  }
+  .mmasaiicons {
+    font-size: 12px;
+  }
+  .masaiaboutus1 ul > li {
+    line-height: 20px;
+
+    font-size: 6px;
+  }
+  .masaiaboutus1 {
+    align-items: flex-start;
+  }
+  .mcompaniesanimation {
+    gap: 10px;
+  }
+  .mcompaniesanimation > img {
+    width: 80px;
+  }
+  .mcompaniesheading > span {
+    font-size: 15px;
+  }
+  .masaiboxheading {
+    font-size: 15px;
+  }
+  .mcarouselbutton > span {
+    font-size: 12px;
+  }
+  .mcarouselheading > span {
+    font-size: 15px;
+  }
+}
+
