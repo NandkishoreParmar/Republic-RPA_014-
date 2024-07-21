@@ -212,35 +212,7 @@ div.containerN > div > button:hover{
   background-color: rgb(240, 211, 211);
   cursor: pointer;
 }
-/* div.containerN > div > a:nth-of-type(7) {
-color: #8184d3;
-/* border: 2px solid black; 
 
-} */
-
-/* Nandkishore day 2 */
-
-/* upper container {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    }
-    #upperOne{
-    max-width: 1320px;
-    margin: auto;
-    }
-    
-    #upper1{
-    font-family: "Open Sans", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    /* height: 80vh; */
-    /* background-color: #f5f5f5; */
-  /* } */
-
-  /* upper one code started */
   #upperOne{
     max-width: 1320px;
     margin: auto;
@@ -425,98 +397,7 @@ color: #8184d3;
           rgba(0, 0, 0, 0)
         );
       }
-      .in {
-        width: 40px;
-        height: 40px;
-        /* position: absolute; */
-        border-radius: 6px;
-        left: max(calc(30px * 25), 100%);
-        animation-name: ScrollLeft;
-        animation-duration: 100s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-delay: 10s;
-      }
-      @keyframes ScrollLeft {
-        to {
-          left: -40px;
-        }
-      }
-      .in1 {
-        animation-delay: calc(100s / 25 * (25-1) * -1);
-      }
-      .in2 {
-        animation-delay: calc(100s / 25 * (25-2) * -1);
-      }
-      .in3 {
-        animation-delay: calc(100s / 25 * (25-3) * -1);
-      }
-      .in4 {
-        animation-delay: calc(100s / 25 * (25-4) * -1);
-      }
-      .in5 {
-        animation-delay: calc(100s / 25 * (25-5) * -1);
-      }
-      .in6 {
-        animation-delay: calc(100s / 25 * (25-6) * -1);
-      }
-      .in7 {
-        animation-delay: calc(100s / 25 * (25-7) * -1);
-      }
-      .in8 {
-        animation-delay: calc(100s / 25 * (25-8) * -1);
-      }
-      .in9 {
-        animation-delay: calc(100s / 25 * (25-9) * -1);
-      }
-      .in10 {
-        animation-delay: calc(100s / 25 * (25-10) * -1);
-      }
-      .in11 {
-        animation-delay: calc(100s / 25 * (25-11) * -1);
-      }
-      .in12 {
-        animation-delay: calc(100s / 25 * (25-12) * -1);
-      }
-      .in13 {
-        animation-delay: calc(100s / 25 * (25-13) * -1);
-      }
-      .in14 {
-        animation-delay: calc(100s / 25 * (25-14) * -1);
-      }
-      .in15 {
-        animation-delay: calc(100s / 25 * (25-15) * -1);
-      }
-      .in16 {
-        animation-delay: calc(100s / 25 * (25-16) * -1);
-      }
-      .in17 {
-        animation-delay: calc(100s / 25 * (25-17) * -1);
-      }
-      .in18 {
-        animation-delay: calc(100s / 25 * (25-18) * -1);
-      }
-      .in19 {
-        animation-delay: calc(100s / 25 * (25-19) * -1);
-      }
-      .in20 {
-        animation-delay: calc(100s / 25 * (25-20) * -1);
-      }
-      .in21 {
-        animation-delay: calc(100s / 25 * (25-21) * -1);
-      }
-      .in22 {
-        animation-delay: calc(100s / 25 * (25-22) * -1);
-      }
-      .in23 {
-        animation-delay: calc(100s / 25 * (25-23) * -1);
-      }
-      .in24 {
-        animation-delay: calc(100s / 25 * (25-24) * -1);
-      }
-      .in25 {
-        animation-delay: calc(100s / 25 * (25-25) * -1);
-      }
+      
       .bcont{
         display: flex;
         gap: 10px;
@@ -995,7 +876,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid rgb(68, 68, 68);
 }
 .mmasaisocialicons {
   display: flex;
