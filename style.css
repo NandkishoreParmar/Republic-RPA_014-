@@ -1101,3 +1101,210 @@ footer {
   }
 }
 
+/* media query */
+@media (max-width: 1280px) {
+  .containerN {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .nav-links>a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .containerN {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerN {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .containerN {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+
+
+
+/* upper one responsive */
+@media (max-width: 768px) {
+  #upper1>div.cardN {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #courses>div.fixed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  div#b2>div:nth-of-type(3) {
+    height: 170px;
+    width: 300px;
+    top: 60%;
+    left: -30%;
+    padding: 20px;
+    background-color: rgba(234, 234, 243, 0.226);
+    z-index: 2;
+    border-radius: 15px;
+    opacity: 1;
+    box-shadow: rgba(106, 106, 165, 0.226) -5px 5px, rgba(106, 106, 165, 0.226) -10px 10px, rgba(106, 106, 165, 0.226) -15px 15px, rgba(106, 106, 165, 0.226) -20px 20px, rgba(106, 106, 165, 0.226) -25px 25px;
+  }
+
+  .card-contentN .award-image {
+    margin-top: 10px;
+    margin-left: 170px;
+    width: 300px;
+  }
+
+  .bcontainer1>div {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  #nMedia {
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  #nMedia>div:nth-of-type(1) {
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nMedia>div:nth-of-type(2) {
+    margin-top: 20px;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Mediacon2 {
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ourMedia {
+    /* border: 2px solid; */
+    display: none;
+  }
+/* 500 media */
+@media (max-width: 500px) {
+  #upper1>div.cardN {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #courses>div.fixed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  /* div#b2>div:nth-of-type(2){
+    border: 2px solid;
+  } */
+  div#b2>div:nth-of-type(3) {
+    display: none;
+  }
+
+  .card-contentN .award-image {
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 300px;
+  }
+
+  .bcontainer1>div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* #ba{
+display: flex;
+} */
+
+  #nMedia {
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  #nMedia>div:nth-of-type(1) {
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nMedia>div:nth-of-type(2) {
+    margin-top: 20px;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Mediacon2 {
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ourMedia {
+    /* border: 2px solid; */
+    display: none;
+  }
+  #breakn {
+    display: none;
+  }
+
+  #videoN {
+    width: 100%;
+    /* border: 2px solid; */
+  }
+
+
+}
+
+@media (max-width: 1050px) {
+  div.containerN>div>button {
+    margin-left: 30px;
+  }
+
+  .nav-links>a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    /* border: 2px solid; */
+    font-size: 14px;
+  }
+
+}
