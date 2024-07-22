@@ -106,14 +106,47 @@ font-size: 30px;
 color: red;
 }
 /* nav     */
+/* Existing CSS code here */
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-/* position: relative; */
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-nav>div.containerN>a>sup>sup{
+
+#navN{
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: white;
+}
+
+div.containerN {
+  max-width: 1320px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+div.containerN > img {
+  margin-right: 20px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+}
+nav>div.containerN>div.nav-links>a>sup>sup{
   /* border: 2px solid; */
   color: #d1a07b;
   /* color: #e5baa4; */
@@ -122,96 +155,62 @@ nav>div.containerN>a>sup>sup{
   background-color: #f7ede5;
 }
 
-/* drop down start here  */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  /* margin: 20px; */
-}
-
-.dropbtn {
-  text-decoration: none;
-  color: black;
-  padding: 15px;
-  background-color: white;
-  /* border: 2px solid #ef1741; */
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: max-content;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 22px;
-}
-
-.dropdown-content a {
-  color: black;
-  /* margin-top: 10px; */
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* drop down end here  */
-
-nav {
-color: black;
-font-family: "Open Sans", sans-serif;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-position: sticky;
-top: 0;
-z-index: 3;
-background-color: white;
-}
-
-div.containerN {
-/* border: 2px solid; */
-max-width: 1320px;
-margin: auto;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px;
-}
-div.containerN > a {
-margin-left: 20px;
-text-decoration: none;
-color: black;
-}
 div.containerN > div > button {
-margin-left: 200px; 
-padding: 12px 16px;
-border-radius: 10px;
-border: 1px solid #ef1741;
-color: #ef1741;
-background-color: white;
+  margin-left: 200px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #ef1741;
+  color: #ef1741;
+  background-color: white;
 }
-div.containerN > div > button:hover{
+
+div.containerN > div > button:hover {
   background-color: rgb(240, 211, 211);
   cursor: pointer;
 }
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+  }
+  div.containerN > div > button {
+      margin-left: 75px;
+     }
+  .nav-links a {
+      margin: 10px 0;
+  }
+  .hamburger {
+      display: block;
+  }
+  .nav-links.open {
+      display: flex;
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      z-index: 2;
+  }
+  
+  
+}
+
+  
+/* main part code  */
+  
+
 
   #upperOne{
     max-width: 1320px;
