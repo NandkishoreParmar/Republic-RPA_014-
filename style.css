@@ -290,7 +290,7 @@ div.containerN > div > button:hover {
   position: absolute;
   }
   div#b2 > div:nth-of-type(1) {
-  background-color: rgb(214, 226, 250);
+  background-color: #ffdca2;
   height: 500px;
   /* border: 2px solid; */
   border-radius: 20px;
